@@ -3,7 +3,7 @@ package service
 import "golang-gin/entity"
 
 type VideoService interface {
-	Save(entity.Video) entity.Video
+	Save(video entity.Video)
 	FindAll() []entity.Video
 }
 
@@ -17,9 +17,8 @@ func New() VideoService {
 	}
 }
 
-func (service *videoService) Save(video entity.Video) entity.Video {
+func (service *videoService) Save(video entity.Video) {
 	service.videos = append(service.videos, video)
-	return video
 }
 
 func (service *videoService) FindAll() []entity.Video {
