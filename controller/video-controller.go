@@ -2,8 +2,8 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"gitlab.com/pragmaticreviews/golang-gin-poc/entity"
-	"gitlab.com/pragmaticreviews/golang-gin-poc/service"
+	"golang-gin/entity"
+	"golang-gin/service"
 )
 
 type VideoController interface {

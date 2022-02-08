@@ -1,4 +1,4 @@
-module gitlab.com/pragmaticreviews/golang-gin-poc
+module golang-gin
 
 go 1.14
 

@@ -6,9 +6,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 	// gindump "github.com/tpkeeper/gin-dump"
-	"gitlab.com/pragmaticreviews/golang-gin-poc/controller"
-	"gitlab.com/pragmaticreviews/golang-gin-poc/middlewares"
-	"gitlab.com/pragmaticreviews/golang-gin-poc/service"
+	"golang-gin/controller"
+	"golang-gin/middlewares"
+	"golang-gin/service"
 )
 
 var (
