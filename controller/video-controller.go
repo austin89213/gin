@@ -3,7 +3,6 @@ package controller
 import (
 	"golang-gin/entity"
 	"golang-gin/service"
-	"golang-gin/validators"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -24,7 +23,6 @@ var validate *validator.Validate
 
 func New(service service.VideoService) VideoController {
 	validate = validator.New()
-	validate.RegisterValidation("is-cool", validators.ValidateCoolTitle)
 	return &controller{
 		service: service,
 	}
