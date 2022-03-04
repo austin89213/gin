@@ -12,6 +12,8 @@ definitions:
   entity.Person:
     properties:
       age:
+        maximum: 130
+        minimum: 0
         type: integer
       email:
         type: string
@@ -30,12 +32,14 @@ definitions:
     properties:
       author:
         $ref: '#/definitions/entity.Person'
-        type: object
       description:
+        maxLength: 200
         type: string
       id:
         type: integer
       title:
+        maxLength: 100
+        minLength: 2
         type: string
       url:
         type: string
@@ -45,7 +49,6 @@ definitions:
     type: object
 info:
   contact: {}
-  license: {}
 paths:
   /auth/token:
     post:

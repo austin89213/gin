@@ -35,7 +35,7 @@ func main() {
 	docs.SwaggerInfo.Title = "Pragmatic Reviews - Video API"
 	docs.SwaggerInfo.Description = "Pragmatic Reviews - Youtube Video API."
 	docs.SwaggerInfo.Version = "1.0"
-	docs.SwaggerInfo.Host = "localhost:8080"
+	docs.SwaggerInfo.Host = "localhost:8008"
 	docs.SwaggerInfo.BasePath = "/api/v1"
 	docs.SwaggerInfo.Schemes = []string{"https"}
 

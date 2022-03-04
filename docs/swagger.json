@@ -1,8 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-        "contact": {},
-        "license": {}
+        "contact": {}
     },
     "paths": {
         "/auth/token": {
@@ -271,7 +270,9 @@
             ],
             "properties": {
                 "age": {
-                    "type": "integer"
+                    "type": "integer",
+                    "maximum": 130,
+                    "minimum": 0
                 },
                 "email": {
                     "type": "string"
@@ -295,17 +296,19 @@
             ],
             "properties": {
                 "author": {
-                    "type": "object",
                     "$ref": "#/definitions/entity.Person"
                 },
                 "description": {
-                    "type": "string"
+                    "type": "string",
+                    "maxLength": 200
                 },
                 "id": {
                     "type": "integer"
                 },
                 "title": {
-                    "type": "string"
+                    "type": "string",
+                    "maxLength": 100,
+                    "minLength": 2
                 },
                 "url": {
                     "type": "string"
